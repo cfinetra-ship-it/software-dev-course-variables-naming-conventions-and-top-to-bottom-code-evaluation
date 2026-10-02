@@ -24,9 +24,13 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let shopper = "Alice";
+let quantity = 5;
+let totalCost = 20;
+let costPerItem = totalCost / quantity;
+let taxAmount = 2;
+let finalCost = totalCost + taxAmount;
+let purchaseMessage = shopper + " bought " + quantity + " items for $" + totalCost + " at $ " + costPerItem + " per item." + " The final cost with tax is $ " + finalCost + " . " 
 
-console.log(d);
+
+console.log(purchaseMessage);
